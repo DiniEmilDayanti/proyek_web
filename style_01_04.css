@@ -1,0 +1,60 @@
+.fk{
+    text-align: center;
+    background-color: midnightblue;
+    color:whitesmoke ;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:first-child{
+    background-color: lightslategray;
+}
+
+.search-box {
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

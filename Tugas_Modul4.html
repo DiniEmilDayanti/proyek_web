@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 04</title>
+    <link rel="stylesheet" href="style_01_04.css">
+</head>
+<body>
+    <div class="fk"><font size="5">Fakultas Ilmu Komputer</font> </div>
+    <div class="fk"><font size="5">Universitas Kuningan</font> </div>
+    <div class="fk"><font size="3">
+    Alamat: Jl. Pramuka No.67, Purwawinangun,
+    Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45512</font></div>
+<hr size="3">
+<table border="1">
+    <h3>DAFTAR PROGRAM STUDI</h3>
+    <div ><tr>
+        <th>No.</th>
+        <th>Program Studi</th>
+        <th>Jenjang</th>
+    </tr>
+    <tr>
+        <td align="right">1.</td>
+        <td>Sistem Informasi</td>
+        <td>S1</td>
+    </tr>
+    <tr>
+        <td align="right">2.</td>
+        <td>Teknik Informatika</td>
+        <td>S1</td>
+    </tr>
+    <tr>
+        <td align="right">3.</td>
+        <td>Desain Komunikasi Visual</td>
+        <td>S1</td>
+    </tr>
+    <tr>
+        <td align="right">4.</td>
+        <td>Manajemen Informatika</td>
+        <td>D3</td>
+    </tr>
+    <tr>
+        <td align="right">5.</td>
+        <td>Teknik Sipil</td>
+        <td>S1</td>
+    </tr>
+    </div>
+</table>
+   
+<table border="1">
+    <h3>DAFTAR DOSEN</h3>
+    <div ><tr>
+        <th >No.</th>
+        <th>Nama</th>
+        <th>Homebase</th>
+        <th>Rumpun Keilmuan</th>
+    </tr>
+    <tr>
+        <td align="right">1.</td>
+        <td>Tito Sugiharto, M.Eng.</td>
+        <td>Teknik Informatika</td>
+        <td>Computer Engineering</td>
+    </tr>
+    <tr>
+        <td align="right">2.</td>
+        <td>Erik Kurniadi, M.Kom.</td>
+        <td>Sistem Informasi</td>
+        <td>Information System</td>
+    </tr>
+    <tr>
+        <td align="right">3.</td>
+        <td>Jerry D. Rahajaan, M.Sn. </td>
+        <td>Desain Komunikasi Visual</td>
+        <td>Seni, Desain, & Media</td>
+    </tr>
+    <tr>
+        <td align="right">4.</td>
+        <td>Panji Novantara, M.T.</td>
+        <td>Teknik Informatika</td>
+        <td>Computer Science</td>
+    </tr>
+    <tr>
+        <td align="right">5.</td>
+        <td>Dede Irawan, M.Kom</td>
+        <td>sistem Informasi</td>
+        <td>Pemrograman Web 1</td>
+    </tr>
+    <tr>
+        <td align="right">6.</td>
+        <td>Aji Permana, M.Kom</td>
+        <td>Sistem Informasi </td>
+        <td>Pemrograman 1</td>
+    </tr>
+    <tr>
+        <td align="right">7.</td>
+        <td>Endra Suseno, M.Kom</td>
+        <td>Sistem Informasi</td>
+        <td>Struktur Data, Basis Data</td>
+    </tr>
+    <tr>
+        <td align="right">8.</td>
+        <td>Fahmi Yusuf, M.M.S.I</td>
+        <td>Sistem Informasi</td>
+        <td>Konsep Sistem Infromasi, Sistem Infromasi Manajemen</td>
+    </tr>
+    <tr>
+        <td align="right">9.</td>
+        <td>Erlan Darmawan, M.Si</td>
+        <td>Sistem Infromasi</td>
+        <td>Pemrograman Berorientasi Opjek, Logika Infromatika</td>
+    </tr>
+    <tr>
+        <td align="right">10.</td>
+        <td>Roni Nursyamsu, M.Pd</td>
+        <td>Sistem Infromasi</td>
+        <td>Bahasa Inggris, English Communication For IT</td>
+    </tr>
+    </div>
+</table>
+
+<h3>Cari Alumni</h3>
+    <div class="search-box">
+        <label for="searchInput">Masukkan Nama atau Program Studi: </label>
+        <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Cari alumni...">
+    </div>
+
+    <table id="alumniTable" border="1">
+        <caption><strong>DAFTAR ALUMNI</strong></caption>
+        <tr>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Program Studi</th>
+            <th>Tahun Lulus</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td class="tooltip">Dwisari
+                <span class="tooltip-text">Email: dwisari@email.com<br>Phone: 081234567890</span>
+            </td>
+            <td>Sistem Informasi</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td class="tooltip">Alifan
+                <span class="tooltip-text">Email: alifan@email.com<br>Phone: 081234567891</span>
+            </td>
+            <td>Sistem Informasi</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td class="tooltip">Rudiana
+                <span class="tooltip-text">Email: rudiana@email.com<br>Phone: 081234567892</span>
+            </td>
+            <td>Teknik Informatika</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td class="tooltip">Tiara
+                <span class="tooltip-text">Email: tiara@email.com<br>Phone: 081234567893</span>
+            </td>
+            <td>Teknik Informatika</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td class="tooltip">Bastian
+                <span class="tooltip-text">Email: bastian@email.com<br>Phone: 081234567894</span>
+            </td>
+            <td>Desain Komunikasi Visual</td>
+            <td>2019</td>
+        </tr>
+    </table>
+    
+    <script>
+        function filterTable() {
+            
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let table = document.getElementById("alumniTable");
+            let rows = table.getElementsByTagName("tr");
+
+  
+            for (let i = 1; i < rows.length; i++) {
+                let cells = rows[i].getElementsByTagName("td");
+                let found = false;
+
+                
+                for (let j = 1; j < cells.length; j++) {
+                    if (cells[j].innerText.toLowerCase().indexOf(input) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+
+                rows[i].style.display = found ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>
